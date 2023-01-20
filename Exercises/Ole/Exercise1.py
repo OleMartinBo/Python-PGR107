@@ -1,4 +1,4 @@
-import math
+from math import sqrt
 
 #Variabler
 x = 2.5
@@ -21,6 +21,13 @@ opC = 5 * x - n / 5
 print("Answer C: " + " " + str(opC))
 #D
 print(spaceBetween)
-opD = 1 - (1-(-1(-1(1 - n))))
+opD = 1 - (1 - (1 - (1 - (1 - n)))) 
 print(opD)
+#E
+print(spaceBetween)
+opE = sqrt(sqrt(n))
+print(opE)
+
+
+#Oppgave 2
 
