@@ -1,5 +1,6 @@
 
-#A 
+
+print("----- oppgave 1 -----")
 
 from cmath import sqrt
 
@@ -10,7 +11,6 @@ m = 18
 n = 4
 
 #A
-
 
 print(x + n * y - (x + n) * y )
 
@@ -24,11 +24,15 @@ print(5*x-n/5)
 print(1-(1-(1-(1-(1-n)))))
 
 #E
-oppE = sqrt(sqrt (n))
+oppE = sqrt (n)
 print(oppE)
 
-print("----------")
+print("-----avslutt oppgave 1 -----")
+
+
 #Oppgave 2
+
+print("----- oppgave 2 -----")
 
 
 n = 17
