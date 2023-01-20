@@ -10,6 +10,7 @@ git add . && git commit -m" " ,
 git push
 
 
+
 //Hente nye updates
 git status ,
 git pull
