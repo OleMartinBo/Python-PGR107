@@ -70,4 +70,16 @@ print(spaceBetween)
 print(" ")
 
 #Oppgave 3
+#Nye variabler 
+s = "Hello"
+t = "World"
+
 #A
+print(spaceBetween)
+oppgA = len(s) + len(t)
+print("Answer A: " + " " + str(oppgA))
+
+
+
+
+
