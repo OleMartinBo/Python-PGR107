@@ -2,11 +2,13 @@
 Felles skole arbeid
 
 
-//Hente mappe
+//Hente Repo fra git: 
 git clone + git link,
 
-//Pushe til git
+//Legge til nye endringer før push: 
 git add . && git commit -m" " ,
+
+//Pushe til git: 
 git push
 
 
