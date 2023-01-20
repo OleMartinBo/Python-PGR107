@@ -79,6 +79,31 @@ print(spaceBetween)
 oppgA = len(s) + len(t)
 print("Answer A: " + " " + str(oppgA))
 
+#B
+print(spaceBetween)
+oppgB = s[1] + s[2]
+print("Answer B: " + " " + str(oppgB))
+
+#C
+print(spaceBetween)
+oppgC = s[len (s) // 2]
+print("Answer C: " + " " + str(oppgC))
+
+#D
+print(spaceBetween)
+oppgD = s[1] + s[2]
+print("Answer D: " + " " + str(oppgD))
+
+
+#E
+print(spaceBetween)
+oppgE = s + t
+print("Answer E: " + " " + oppgE)
+
+
+
+
+
 
 
 
