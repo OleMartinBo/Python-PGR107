@@ -9,4 +9,4 @@ Git commands:
 
 //Pushe til Git: git push
 
-//Hente nye updates og se status: git status -> git pull
+//Hente nye updates og se status: git fetch -> git status -> git pull
