@@ -5,7 +5,7 @@ Git commands:
 
 //Hente Repo fra Git: git clone + git link,
 
-//Legge til nye endringer før push og melding: git add . && git commit -m" " ,
+//Legge til nye endringer før push og melding: git add . && git commit -m" " 
 
 //Pushe til Git: git push
 
