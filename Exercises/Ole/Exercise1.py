@@ -49,7 +49,7 @@ print("Answer B: " + " " + str(oppB))
 
 #C
 print(spaceBetween)
-oppC = (m+n) // 2
+oppC = (m + n) // 2
 print("Answer C: " + " " + str(oppC))
 
 #D
@@ -66,4 +66,8 @@ print("Answer E: " + " " + str(oppE))
 print(spaceBetween)
 oppF = int(round(0.5 *(m +n)))
 print("Answer F: " + " " + str(oppF))
+print(spaceBetween)
+print(" ")
 
+#Oppgave 3
+#A
