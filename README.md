@@ -1,18 +1,12 @@
 # Python-PGR107
-Felles skole arbeid
+Felles skole arbeid i PGR-107
 
+Git commands:
 
-//Hente Repo fra git: 
-git clone + git link,
+//Hente Repo fra Git: git clone + git link,
 
-//Legge til nye endringer før push: 
-git add . && git commit -m" " ,
+//Legge til nye endringer før push og melding: git add . && git commit -m" " ,
 
-//Pushe til git: 
-git push
+//Pushe til Git: git push
 
-
-
-//Hente nye updates
-git status ,
-git pull
+//Hente nye updates og se status: git status -> git pull
