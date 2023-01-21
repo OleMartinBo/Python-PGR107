@@ -153,8 +153,40 @@ perimeter = userInputOne * 2 + userInputTwo * 2
 
 print("Omerådet er: " + " " + str(area) + "m^2")
 print("Omkretsen: " + " " + str(perimeter))
+print(spaceBetween)
+print(" ")
 
-#Oppgave 6
+#Oppgave 7
+print("Oppgave 7")
+print(spaceBetween)
+
+name = "Mississippi"
+print("Orginal: " + name)
+
+replaceName = name.replace("ssissip", "...")
+print("New: " + replaceName)
+print(spaceBetween)
+
+#Alt til oppgave 7
+string = "Mississippi"
+print("New v2: " + string[:2] + "..." + string[-2:])
+print(spaceBetween)
+print(" ")
+
+
+#Oppgave 8
+print("Oppgave 8")
+print(spaceBetween)
+
+nummerInput = input("Skriv inn et fem sifferet nummer: ")
+if len(nummerInput) !=5:
+    print("Du skrev ikke et fem sifferet nummer, må også være int")
+else:
+    for nummer in nummerInput:
+        print(nummer, end=' ')
+
+print(spaceBetween)
+print(" ")
 
 
 
