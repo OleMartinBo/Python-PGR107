@@ -1,4 +1,5 @@
 from math import sqrt
+from math import dist
 
 #Oppgave 1
 #Variabler
@@ -103,7 +104,7 @@ print("Answer E: " + " " +  oppgE)
 print(spaceBetween)
 oppgF = s * 2
 print("Answer F: " + " " + oppgF)
-
+print(spaceBetween)
 print(" ")
 
 #Oppgave 4
@@ -116,14 +117,31 @@ print(spaceBetween)
 title1 = "Sum ="
 title2 = "Difference ="
 title3 = "Product ="
+title4 = "Average ="
+title5 = "Distance ="
+title6 = "Maximum ="
+title7 = "Minimum ="
 
+#A-G
 sumOfNumbers = (number1 + number2)
 differenceOfNumbers = (number1 - number2)
+productOfNumbers = (number1 * number2)
+averageNumber = ((number1 + number2) / 2)
+distanceBetweenNumbers = abs(number1 - number2)
+maxNumbers = max(number1, number2)
+minNumbers = min(number1, number2)
 
+
+#Oppgave 5
 print(title1 + "%14d" % (sumOfNumbers))
-print(title2 + "%14d" % (differenceOfNumbers) )
+print(title2 + "%14d" % (differenceOfNumbers))
+print(title3 + "%14d" % (productOfNumbers))
+print(title4 + "%14.1f" % (float(averageNumber)))
+print(title5 + "%14d" % (distanceBetweenNumbers))
+print(title6 + "%14d" % (maxNumbers))
+print(title7 + "%14d" % (minNumbers))
 
-
+#Oppgave 6
 
 
 
