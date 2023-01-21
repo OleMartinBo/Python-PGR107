@@ -11,7 +11,6 @@ Felles skole arbeid i PGR-107
 
 //Hente nye updates og se status: git fetch -> git status -> git pull
 
-
 ----Extensions for Python i VSC----
 
  1. Python (Microsoft)
