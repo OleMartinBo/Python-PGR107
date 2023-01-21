@@ -1,5 +1,4 @@
 from math import sqrt
-from math import dist
 
 #Oppgave 1
 #Variabler
