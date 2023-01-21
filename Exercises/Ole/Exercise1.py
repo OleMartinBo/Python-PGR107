@@ -91,14 +91,40 @@ print("Answer C: " + " " + str(oppgC))
 
 #D
 print(spaceBetween)
-oppgD = s[1] + s[2]
-print("Answer D: " + " " + str(oppgD))
-
+oppgD = s + " " + t
+print("Answer D: " + " " +  oppgD)
 
 #E
 print(spaceBetween)
-oppgE = s + t
-print("Answer E: " + " " + oppgE)
+oppgE = t + " " + s
+print("Answer E: " + " " +  oppgE)
+
+#F
+print(spaceBetween)
+oppgF = s * 2
+print("Answer F: " + " " + oppgF)
+
+print(" ")
+
+#Oppgave 4
+print("Oppgave 4")
+print("Enter numbers for outputs")
+number1 = int(input("Input number one: "))
+number2 = int(input("Input number two: "))
+print(spaceBetween)
+
+title1 = "Sum ="
+title2 = "Difference ="
+title3 = "Product ="
+
+sumOfNumbers = (number1 + number2)
+differenceOfNumbers = (number1 - number2)
+
+print(title1 + "%14d" % (sumOfNumbers))
+print(title2 + "%14d" % (differenceOfNumbers) )
+
+
+
 
 
 
