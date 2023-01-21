@@ -107,8 +107,7 @@ print(spaceBetween)
 print(" ")
 
 #Oppgave 4
-print("Oppgave 4")
-print("Enter numbers for outputs")
+print("Oppgave 4 \nEnter numbers for outputs")
 number1 = int(input("Input number one: "))
 number2 = int(input("Input number two: "))
 print(spaceBetween)
@@ -139,6 +138,21 @@ print(title4 + "%14.1f" % (float(averageNumber)))
 print(title5 + "%14d" % (distanceBetweenNumbers))
 print(title6 + "%14d" % (maxNumbers))
 print(title7 + "%14d" % (minNumbers))
+print(spaceBetween)
+print(" ")
+
+#Oppgave 6
+print("Oppgave 6 \nArea og Perimeter kalkulator")
+print(spaceBetween)
+userInputOne = int(input("Tast inn side en: "))
+userInputTwo = int(input("Tast inn side to: "))
+print(spaceBetween)
+
+area = userInputOne * userInputTwo
+perimeter = userInputOne * 2 + userInputTwo * 2
+
+print("Omerådet er: " + " " + str(area) + "m^2")
+print("Omkretsen: " + " " + str(perimeter))
 
 #Oppgave 6
 
