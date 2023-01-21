@@ -7,7 +7,8 @@ y = -1.5
 m = 18
 n = 4
 spaceBetween = "----------"
-print("Oppgave 1")
+
+print("Oppgave 1:\n" +  spaceBetween)
 #A
 opA = x + n * y - (x+n) * y
 print("Answer A: " + " " + str(opA))
@@ -36,9 +37,8 @@ print(" ")
 n = 17
 m = 18
 
-print("Oppgave 2")
+print("Oppgave 2:\n" + spaceBetween)
 #A
-print(spaceBetween)
 oppA = n // 10 + n % 10
 print("Answer A: " + " " + str(oppA))
 
@@ -71,11 +71,11 @@ print(" ")
 
 #Oppgave 3
 #Nye variabler 
+print("Oppgave 3:\n" + spaceBetween)
 s = "Hello"
 t = "World"
 
 #A
-print(spaceBetween)
 oppgA = len(s) + len(t)
 print("Answer A: " + " " + str(oppgA))
 
@@ -107,7 +107,7 @@ print(spaceBetween)
 print(" ")
 
 #Oppgave 4
-print("Oppgave 4 \nEnter numbers for outputs")
+print("Oppgave 4 \nEnter numbers for outputs\n" + spaceBetween)
 number1 = int(input("Input number one: "))
 number2 = int(input("Input number two: "))
 print(spaceBetween)
@@ -140,9 +140,9 @@ print("{:<14} {:>7}".format(title6, maxNumbers))
 print("{:<14} {:>7}".format(title7, minNumbers))
 print(spaceBetween)
 print(" ")
+
 #Oppgave 6
-print("Oppgave 6 \nArea og Perimeter kalkulator")
-print(spaceBetween)
+print("Oppgave 6 \nArea og Perimeter kalkulator\n"+spaceBetween)
 userInputOne = int(input("Tast inn side en: "))
 userInputTwo = int(input("Tast inn side to: "))
 print(spaceBetween)
@@ -156,8 +156,7 @@ print(spaceBetween)
 print(" ")
 
 #Oppgave 7
-print("Oppgave 7")
-print(spaceBetween)
+print("Oppgave 7\n"+spaceBetween)
 
 name = "Mississippi"
 print("Orginal: " + name)
@@ -174,8 +173,7 @@ print(" ")
 
 
 #Oppgave 8
-print("Oppgave 8")
-print(spaceBetween)
+print("Oppgave 8\n" + spaceBetween)
 
 nummerInput = input("Skriv inn et fem sifferet nummer: ")
 if len(nummerInput) !=5:
