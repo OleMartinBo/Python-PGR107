@@ -112,13 +112,13 @@ number1 = int(input("Input number one: "))
 number2 = int(input("Input number two: "))
 print(spaceBetween)
 
-title1 = "Sum ="
-title2 = "Difference ="
-title3 = "Product ="
-title4 = "Average ="
-title5 = "Distance ="
-title6 = "Maximum ="
-title7 = "Minimum ="
+title1 = "Sum="
+title2 = "Difference="
+title3 = "Product="
+title4 = "Average="
+title5 = "Distance="
+title6 = "Maximum="
+title7 = "Minimum="
 
 #A-G
 sumOfNumbers = (number1 + number2)
@@ -131,16 +131,15 @@ minNumbers = min(number1, number2)
 
 
 #Oppgave 5
-print(title1 + "%14d" % (sumOfNumbers))
-print(title2 + "%14d" % (differenceOfNumbers))
-print(title3 + "%14d" % (productOfNumbers))
-print(title4 + "%14.1f" % (float(averageNumber)))
-print(title5 + "%14d" % (distanceBetweenNumbers))
-print(title6 + "%14d" % (maxNumbers))
-print(title7 + "%14d" % (minNumbers))
+print("{:<14} {:>7}".format(title1, sumOfNumbers))
+print("{:<14} {:>7}".format(title2, differenceOfNumbers))
+print("{:<14} {:>7}".format(title3, productOfNumbers))
+print("{:<14} {:>7}".format(title4, float(averageNumber)))
+print("{:<14} {:>7}".format(title5, distanceBetweenNumbers))
+print("{:<14} {:>7}".format(title6, maxNumbers))
+print("{:<14} {:>7}".format(title7, minNumbers))
 print(spaceBetween)
 print(" ")
-
 #Oppgave 6
 print("Oppgave 6 \nArea og Perimeter kalkulator")
 print(spaceBetween)
@@ -185,7 +184,7 @@ else:
     for nummer in nummerInput:
         print(nummer, end=' ')
 
-print(spaceBetween)
+
 print(" ")
 
 
