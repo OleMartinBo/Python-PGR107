@@ -36,11 +36,11 @@ number2 = int(input("Enter a whole number: "))
 
 sum = number1 + number2
 difference = number1 - number2
-#product = number1 * number2
-#avarage = (number1 + number2)/2
-#distance = math.dist([number1], [number2])
-#maximum = max(number1, number2)
-#minimum = min(number1, number2)
+product = number1 * number2
+avarage = (number1 + number2)/2
+distance = math.dist([number1], [number2])
+maximum = max(number1, number2)
+minimum = min(number1, number2)
 
 #print("The sum is: " + str(sum))
 #print("The difference is: " + str(difference))
@@ -50,5 +50,5 @@ difference = number1 - number2
 #print("The maximum is: " + str(maximum))
 #print("The minimum is: " + str(minimum))
 
-print("sum: %-10d\ndifference: %-10d " % (sum, difference))
+print("\nSum = %20d\nDifference = %20d\nProduct = %20d\nAvarage = %20d\nDistance = %20d\nMaximum = %20d\nMinimum = %20d " % (sum, difference, product, avarage, distance, maximum, minimum))
 
