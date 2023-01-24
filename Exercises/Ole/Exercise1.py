@@ -112,32 +112,15 @@ number1 = int(input("Input number one: "))
 number2 = int(input("Input number two: "))
 print(spaceBetween)
 
-title1 = "Sum="
-title2 = "Difference="
-title3 = "Product="
-title4 = "Average="
-title5 = "Distance="
-title6 = "Maximum="
-title7 = "Minimum="
-
 #A-G
-sumOfNumbers = (number1 + number2)
-differenceOfNumbers = (number1 - number2)
-productOfNumbers = (number1 * number2)
-averageNumber = ((number1 + number2) / 2)
-distanceBetweenNumbers = abs(number1 - number2)
-maxNumbers = max(number1, number2)
-minNumbers = min(number1, number2)
-
-
 #Oppgave 5
-print("{:<14} {:>7}".format(title1, sumOfNumbers))
-print("{:<14} {:>7}".format(title2, differenceOfNumbers))
-print("{:<14} {:>7}".format(title3, productOfNumbers))
-print("{:<14} {:>7}".format(title4, float(averageNumber)))
-print("{:<14} {:>7}".format(title5, distanceBetweenNumbers))
-print("{:<14} {:>7}".format(title6, maxNumbers))
-print("{:<14} {:>7}".format(title7, minNumbers))
+print("%-15s" % "Sum =", number1 + number2)
+print("%-15s" % "Difference =", number1 - number2)
+print("%-15s" % "Product =", number1 * number2)
+print("%-15s" % "Average =", (number1 + number2) / 2)
+print("%-15s" % "Distance =", abs(number1 - number2))
+print("%-15s" % "Maximum =", max(number1, number2))
+print("%-15s" % "Minimum =", min(number1, number2))
 print(spaceBetween)
 print(" ")
 
@@ -182,6 +165,10 @@ else:
     for nummer in nummerInput:
         print(nummer, end=' ')
 
+
+#Alt til oppgave 8
+number = input("Enter a five-digit positive integer: ")
+print(number[0], number[1], number[2], number[3], number[4])
 
 print(" ")
 
