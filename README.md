@@ -24,4 +24,5 @@ Felles skole arbeid i PGR-107
  7. Python Snippets
 
 ----Kommentarer i Python----
-Flere linjer: Ctrl + k + c
+
+//Flere linjer: Ctrl + k + c
