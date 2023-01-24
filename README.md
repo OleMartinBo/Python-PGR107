@@ -22,3 +22,6 @@ Felles skole arbeid i PGR-107
  5. Python Test Explorer 
  6. Python Indent
  7. Python Snippets
+
+----Kommentarer i Python----
+Flere linjer: Ctrl + k + c

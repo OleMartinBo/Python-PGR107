@@ -113,7 +113,7 @@ number2 = int(input("Input number two: "))
 print(spaceBetween)
 
 #A-G
-#Oppgave 5
+#Oppgave 4 og 5
 print("%-15s" % "Sum =", number1 + number2)
 print("%-15s" % "Difference =", number1 - number2)
 print("%-15s" % "Product =", number1 * number2)
@@ -171,13 +171,4 @@ number = input("Enter a five-digit positive integer: ")
 print(number[0], number[1], number[2], number[3], number[4])
 
 print(" ")
-
-
-
-
-
-
-
-
-
 
