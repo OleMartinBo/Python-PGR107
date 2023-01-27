@@ -60,88 +60,125 @@ print(linebreak)
 #     print(linebreak)
 #     print("The number you entered is: " + str(userInput))
     
-print(linebreak)
-print(" ")
+# print(linebreak)
+# print(" ")
 
-#Oppgave 3 
-print("Oppgave 3:")
-gradeInput = int(input("Enter the score (0-100): "))
+# #Oppgave 3 
+# print("Oppgave 3:")
+# gradeInput = int(input("Enter the score (0-100): "))
 
-if gradeInput > 100 :
-    print(linebreak)
-    print("Invalid input. The score must be in the range (0-100)")
-elif gradeInput > 89 :
-    print(linebreak)
-    print("The letter grade is A!")
-elif gradeInput > 79 :
-    print(linebreak)
-    print("The letter grade is B!")
-elif gradeInput > 69 :
-    print(linebreak)
-    print("The letter grade is C!")
-elif gradeInput > 60 :
-    print(linebreak)
-    print("The letter grade is D!")
-elif gradeInput < 0 :
-    print(linebreak)
-    print("Invalid input. The score must be in the range (0-100)")
-else:
-    print(linebreak)
-    print("The letter grade is F! You got: " + str(gradeInput) + "/100 score")
+# if gradeInput > 100 :
+#     print(linebreak)
+#     print("Invalid input. The score must be in the range (0-100)")
+# elif gradeInput > 89 :
+#     print(linebreak)
+#     print("The letter grade is A!")
+# elif gradeInput > 79 :
+#     print(linebreak)
+#     print("The letter grade is B!")
+# elif gradeInput > 69 :
+#     print(linebreak)
+#     print("The letter grade is C!")
+# elif gradeInput > 60 :
+#     print(linebreak)
+#     print("The letter grade is D!")
+# elif gradeInput < 0 :
+#     print(linebreak)
+#     print("Invalid input. The score must be in the range (0-100)")
+# else:
+#     print(linebreak)
+#     print("The letter grade is F! You got: " + str(gradeInput) + "/100 score")
     
-print(linebreak)
-print(" ")
+# print(linebreak)
+# print(" ")
 
-#Oppgave 4
-print("Oppgave 4: ")
-aNumber = float(input("Enter a: "))
-bNumber = float(input("Enter b: "))
-operatoType = input("Enter operator type: ")
+# #Oppgave 4
+# print("Oppgave 4: ")
+# aNumber = float(input("Enter a: "))
+# bNumber = float(input("Enter b: "))
+# operatoType = input("Enter operator type: ")
 
-if operatoType == "*" :
-    result = aNumber * bNumber
-    print("Result is: ", result)
-elif operatoType == "/" :
-    if bNumber != 0 :
-        result = aNumber / bNumber
-        print("Result is: ", result)
-    else :
-        print("Invalid, cant divide by 0")
-elif operatoType == "+" :
-    result = aNumber + bNumber
-    print("Result is: ", result)
-elif operatoType == "-" :
-    result = aNumber - bNumber
-    print("Result is: ", result) 
-else :
-    print("Not a valid operator!")
+# if operatoType == "*" :
+#     result = aNumber * bNumber
+#     print("Result is: ", result)
+# elif operatoType == "/" :
+#     if bNumber != 0 :
+#         result = aNumber / bNumber
+#         print("Result is: ", result)
+#     else :
+#         print("Invalid, cant divide by 0")
+# elif operatoType == "+" :
+#     result = aNumber + bNumber
+#     print("Result is: ", result)
+# elif operatoType == "-" :
+#     result = aNumber - bNumber
+#     print("Result is: ", result) 
+# else :
+#     print("Not a valid operator!")
     
-print(linebreak)
-print(" ")
+# print(linebreak)
+# print(" ")
 
-#Oppgave 5
-print("Oppgave 5: ")
-converterNumber = 2.2046226218
-weightInput = float(input("Weight: "))
-converterInput = str(input("(L)bs or (K)g: "))
+# #Oppgave 5
+# print("Oppgave 5: ")
+# converterNumber = 2.2046226218
+# weightInput = float(input("Weight: "))
+# converterInput = str(input("(L)bs or (K)g: "))
 
 
-if converterInput == "L" :
-    if weightInput != 0 :
-        result = weightInput / converterNumber
-        print("You are ", result, " Kg(s)")
-    else :
-        print("Cant devide by 0")
-elif converterInput == "K" :
-    result = weightInput * converterNumber
-    print("You are ", result, " Lb(s)")
-else :
-  print("Not av valid Statment")
+# if converterInput == "L" :
+#     if weightInput != 0 :
+#         result = weightInput / converterNumber
+#         print("You are ", result, " Kg(s)")
+#     else :
+#         print("Cant devide by 0")
+# elif converterInput == "K" :
+#     result = weightInput * converterNumber
+#     print("You are ", result, " Lb(s)")
+# else :
+#   print("Not av valid Statment")
   
-print(linebreak)
-print(" ")
+# print(linebreak)
+# print(" ")
 
 #Oppgave 6
 print("Oppgave 6: ")
+
+string = input("Enter a string: ")
+
+if string.isalpha() :
+    print("Contains only letters.")
+else:
+    print("Doesnt contain only letters")
+
+if string.isupper():
+    print("Contains only uppercase letters.")
+else:
+    print("Doesnt contain uppercase")
+
+if string.islower():
+    print("Contains only lowercase letters.")
+else: 
+    print("Doesnt contain lowercase")
+  
+if string.isdigit():
+    print("Contains only digits.")
+else: 
+    print("Doesnt Contains only digits")
+  
+if string.isalnum():
+    print("Contains only letters and digits.")
+else: 
+    print("Doesnt contain only letters and digits")
+
+if string.endswith("."):
+    print("Contains .")
+else:
+    print("Doesnt contain .")
+
+if string[0].isupper() :
+    print("Start with uppercase")
+else:
+    print("Doesnt start with uppercase")
 
     
