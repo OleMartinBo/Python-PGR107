@@ -1,5 +1,5 @@
 import random
-import sys
+
 
 from bitarray import test
 
@@ -25,10 +25,8 @@ list = [response[0] + choice[0] + choice[1] + choice[2] + choice[3],
 
 def display_costumer_service(): 
     print(cs[0] + cs[1] + cs[2] + cs[3])
-    userInput = input("You: ")
     
-        
-
+    
 while True:
     userInput = input("You: ")
     
@@ -45,10 +43,6 @@ while True:
         if userInput == "1":
             print("Chatbot: You chose costumer service.\n\nHello, tell us what we can help you with! ")
             display_costumer_service()
-            if userInput == cs[3]:
-                print("TEst")
-                
-            
         
         elif userInput == "2":
             print("Chatbot: You chose to speak with an agent, please hold...")
