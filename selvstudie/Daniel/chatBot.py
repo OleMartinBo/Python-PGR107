@@ -10,10 +10,10 @@ choice = ["\n\nPress 1 for costumer service.",
             "\nPress 3 to show FAQ.",
             "\nPress 4 to exit.\n"]
 
-cs = ["\nPress 1 for account", 
-      "\nPress 2 to show your subscription",
-      "\nPress 3 for other",
-      "\nPress 4 to exit"]
+cs = ["Press 1 for account", 
+      "Press 2 to show your subscription",
+      "Press 3 for other",
+      "Press 4 to exit"]
 
 response = ["Hello, how are you?",
             "How can i help you?",
@@ -23,8 +23,13 @@ list = [response[0] + choice[0] + choice[1] + choice[2] + choice[3],
         response[1] + choice[0] + choice[1] + choice[2] + choice[3], 
          response[2] + choice[0] + choice[1] + choice[2] + choice[3]]
 
+list2 = [response[0], for i in choice -> print(i),
+        response[1], for i in choice -> print(i), 
+        response[2], for i in choice -> print(i)]
+
 def display_costumer_service(): 
-    print(cs[0] + cs[1] + cs[2] + cs[3])
+    for i in cs:
+        print(i)
     
     
 while True:
@@ -36,16 +41,16 @@ while True:
         break
     
     else:
-        print("Chatbot: " + random.choice(list))
+        print("Chatbot: " + random.choice(list2))
         
         userInput = input("You: ")
         
         if userInput == "1":
-            print("Chatbot: You chose costumer service.\n\nHello, tell us what we can help you with! ")
-            display_costumer_service()
-            csInput = input("You: ")
-            if csInput == 4:
-                break
+            print("Chatbot: You chose costumer service.")
+            print("")
+            print("Hello, tell us what we can help you with! ")
+            print("")
+            display_costumer_service()    
         
         elif userInput == "2":
             print("Chatbot: You chose to speak with an agent, please hold...")
