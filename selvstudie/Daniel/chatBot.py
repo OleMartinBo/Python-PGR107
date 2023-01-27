@@ -43,6 +43,9 @@ while True:
         if userInput == "1":
             print("Chatbot: You chose costumer service.\n\nHello, tell us what we can help you with! ")
             display_costumer_service()
+            csInput = input("You: ")
+            if csInput == 4:
+                break
         
         elif userInput == "2":
             print("Chatbot: You chose to speak with an agent, please hold...")
