@@ -52,15 +52,15 @@ else:
         sys.exit()
 
 if userInput >= 90 and userInput <= 100:
-    print("A")
+    print("Your lettergrade is: A")
 elif userInput >= 80 and userInput <= 89:
-    print("B")
+    print("Your lettergrade is: B")
 elif userInput >= 70 and userInput <= 79:
-    print("C")
+    print("Your lettergrade is: C")
 elif userInput >= 60 and userInput <= 69:
-    print("D")
+    print("Your lettergrade is: D")
 elif userInput < 60:
-    print("F") 
+    print("Your lettergrade is: F") 
 
         
         
