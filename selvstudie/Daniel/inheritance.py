@@ -13,11 +13,11 @@ class animal:
     
 class Dog(animal):
     def speak(self, times: int = 1):
-        return "WOOF" *times
+        return "WOOF!" *times
 
 class Cat(animal):
     def speak(self, times: int = 1):
-        return "MEOW" *times  
+        return "MEOW!" *times  
     
 dog = Dog("Oblix", "Black", 2015)
 print("%-20s" % "The dogs name is:", dog.name)
@@ -26,6 +26,6 @@ print("%-20s" % "The dogs born in", dog.year )
 print("%-20s" % "The dog says", dog.speak(7))
 
 cat = Cat("Pusur", "Brown", 2017)
-print(cat.speak(50))
+print(cat.speak(10))
     
         
