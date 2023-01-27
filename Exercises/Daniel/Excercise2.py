@@ -2,8 +2,8 @@ from math import sqrt
 import sys
 
 
-n = 1
-m = -1
+#n = 1
+#m = -1
 #if n < -m:
 #    print(n)
 #else:
@@ -39,31 +39,50 @@ m = -1
 #else:
 #    print(userInput)
 
-userInput = input("Enter your grade number: ")
+# userInput = input("Enter your grade number: ")
 
-if userInput.isdigit():
-    userInput = int(userInput)
+# if userInput.isdigit():
+#     userInput = int(userInput)
 
-    if userInput < 1 or userInput > 100:
-        print("Please type a number larger than 1, and lower than 100")
-        sys.exit()
+#     if userInput < 1 or userInput > 100:
+#         print("Please type a number larger than 1, and lower than 100.")
+#         sys.exit()
+# else:
+#         print("Please type a number next time.")
+#         sys.exit()
+
+# if userInput >= 90 and userInput <= 100:
+#     print("Your lettergrade is: A")
+# elif userInput >= 80:
+#     print("Your lettergrade is: B")
+# elif userInput >= 70:
+#     print("Your lettergrade is: C")
+# elif userInput >= 60:
+#     print("Your lettergrade is: D")
+# elif userInput < 60:
+#     print("Your lettergrade is: F")
+
+a = input("Type a number: ")
+b = input("Type a number: ")
+
+operator = input("Enter operator: ")
+
+if operator == "+":
+    result = a + b
+    print("Your result is: %d" % result)
+elif operator == "-":
+    result = a - b
+    print("Your result is: %d" % result)
+elif operator == "*":
+    result = a * b
+    print("Your result is: %d" % result)
+elif operator == "/":
+    result = a / b
+    print("Your result is: %d" % result)
 else:
-        print("Please type a number next time")
-        sys.exit()
-
-if userInput >= 90 and userInput <= 100:
-    print("Your lettergrade is: A")
-elif userInput >= 80 and userInput <= 89:
-    print("Your lettergrade is: B")
-elif userInput >= 70 and userInput <= 79:
-    print("Your lettergrade is: C")
-elif userInput >= 60 and userInput <= 69:
-    print("Your lettergrade is: D")
-elif userInput < 60:
-    print("Your lettergrade is: F") 
-
-        
-        
+    print("Your input is wrong")
+    
+    
         
     
 
