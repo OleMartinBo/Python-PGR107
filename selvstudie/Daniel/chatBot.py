@@ -23,9 +23,6 @@ list = [response[0] + choice[0] + choice[1] + choice[2] + choice[3],
         response[1] + choice[0] + choice[1] + choice[2] + choice[3], 
          response[2] + choice[0] + choice[1] + choice[2] + choice[3]]
 
-list2 = [response[0], for i in choice -> print(i),
-        response[1], for i in choice -> print(i), 
-        response[2], for i in choice -> print(i)]
 
 def display_costumer_service(): 
     for i in cs:
@@ -41,7 +38,7 @@ while True:
         break
     
     else:
-        print("Chatbot: " + random.choice(list2))
+        print("Chatbot: " + random.choice(list))
         
         userInput = input("You: ")
         
