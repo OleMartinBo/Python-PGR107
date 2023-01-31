@@ -1,4 +1,5 @@
 import openpyxl
+import os
 #Make the excel file
 workbook = openpyxl.Workbook()
 sheet = workbook.active
@@ -12,5 +13,7 @@ sheet['B2'] = 21
 sheet['C2'] = 'Bømlo' 
 
 #Save the file
-workbook.save('Testing.xlsx') 
+workbook.save('selvstudie\Daniel\Testing.xlsx') 
+
+print(os.getcwd())
 
