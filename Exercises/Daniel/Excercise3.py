@@ -13,8 +13,8 @@
 #      i = i + 1
 #      j = j - 1
 #      n = n + 1
-#      print("%5s" % str(i), "%5s" % "|", "%5s" % str(j), "%5s" % "|", "%5s" % str(n), "%5s" % "|")
 #      print(linebreaker)
+#      print("%5s" % str(i), "%5s" % "|", "%5s" % str(j), "%5s" % "|", "%5s" % str(n), "%5s" % "|")
 
 #B
 
@@ -69,4 +69,30 @@
 #     n = n + 1
 #     print("%5s" % str(i), "%5s" % "|", "%5s" % str(j), "%5s" % "|", "%5s" % str(n), "%5s" % "|")
 #     print(linebreaker)
+
+#4
+list = [ "Harry"
+        ,"Morgan"
+        , 94
+        , 71
+        , 86
+        , 95 
+        , -1]
+total = 0.0
+count = 2
+print(list[0], list[1])
+while True :
+    if list[count] < 0 :
+        break
+    
+    print(list[count])
+    total = total + list[count]
+    count = count + 1
+    
+if count > 0 :
+    avarage = total/(count-2)
+    print("%-22s" % "The avarage score is: ", "%.2f" % avarage)
+    
+else:
+    avarage = 0
 
