@@ -79,15 +79,15 @@
 #     i = i + 1
     
 
-c = 0
-f = c * (9/5) + 32
-linebreak = "-----------------------------"
-print("%s" % "Celsius", "%3s" % "|", "%s" % "Fahrenheit", "%s" % "|") 
+# c = 0
+# f = 0
+# linebreak = "-----------------------------"
+# print("%-10s" % "Celsius", "%s" % "Fahrenheit") 
 
-while c <= 100 : 
-    f = c * (9/5) + 32
-    print("%5s" % str(c), "%5s" % "|", "%7s" % str(f), "%3s" % "|")
-    c = c + 10
+# while c <= 100 : 
+#     f = c * (9/5) + 32
+#     print("%5s" % str(c), "%5s" % "|", "%5s" % str(f), "%5s" % "|")
+#     c = c + 10
 
 #4
 # list = [ "Harry"
