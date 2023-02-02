@@ -27,7 +27,7 @@ while i < 10:
     print("%3s" % str(i), "%3s" % "|" , "%3s" % str(j),"%3s" % "|","%3s" % str(n), "%3s" % "|")
     print(linebreak)
     
-#B
+#C
 i = 10
 j = 0
 n = 0
@@ -39,3 +39,16 @@ while i > 0:
     j = n + i -j
     print("%3s" % str(i), "%3s" % "|" , "%3s" % str(j),"%3s" % "|","%3s" % str(n), "%3s" % "|")
     print(linebreak)
+    
+# #D
+# i = 0
+# j = 10
+# n = 0
+# print("Oppgave D")
+# print(linebreak)
+# while i != j:
+#     i = i + 2
+#     n = j - 2
+#     j = n + 1
+#     print("%3s" % str(i), "%3s" % "|" , "%3s" % str(j),"%3s" % "|","%3s" % str(n), "%3s" % "|")
+#     print(linebreak)
