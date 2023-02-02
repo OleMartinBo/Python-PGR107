@@ -70,29 +70,48 @@
 #     print("%5s" % str(i), "%5s" % "|", "%5s" % str(j), "%5s" % "|", "%5s" % str(n), "%5s" % "|")
 #     print(linebreaker)
 
+# n = int(input("Write a number: "))
+# i = 0 
+# square = i * i
+# while square < n :  
+#     print(square)
+#     square = i * i
+#     i = i + 1
+    
+
+c = 0
+f = c * (9/5) + 32
+linebreak = "-----------------------------"
+print("%s" % "Celsius", "%3s" % "|", "%s" % "Fahrenheit", "%s" % "|") 
+
+while c <= 100 : 
+    f = c * (9/5) + 32
+    print("%5s" % str(c), "%5s" % "|", "%7s" % str(f), "%3s" % "|")
+    c = c + 10
+
 #4
-list = [ "Harry"
-        ,"Morgan"
-        , 94
-        , 71
-        , 86
-        , 95 
-        , -1]
-total = 0.0
-count = 2
-print(list[0], list[1])
-while True :
-    if list[count] < 0 :
-        break
+# list = [ "Harry"
+#         ,"Morgan"
+#         , 94
+#         , 71
+#         , 86
+#         , 95 
+#         , -1]
+# total = 0.0
+# count = 2
+# print(list[0], list[1])
+# while True :
+#     if list[count] < 0 :
+#         break
     
-    print(list[count])
-    total = total + list[count]
-    count = count + 1
+#     print(list[count])
+#     total = total + list[count]
+#     count = count + 1
     
-if count > 0 :
-    avarage = total/(count-2)
-    print("%-22s" % "The avarage score is: ", "%.2f" % avarage)
+# if count > 0 :
+#     avarage = total/(count-2)
+#     print("%-22s" % "The avarage score is: ", "%.2f" % avarage)
     
-else:
-    avarage = 0
+# else:
+#     avarage = 0
 
