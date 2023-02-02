@@ -84,4 +84,6 @@ while c <= maxGrense:
     print("%s" % "|", "%8s" % str(c), "%5s" % "|", "%10s" % str(f), "%4s" % "|")
     print(linebreak + "---------")
     c = c + 10
- 
+
+
+#Oppgave 4
