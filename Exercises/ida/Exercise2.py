@@ -60,49 +60,80 @@
 # else:
 #     print("The letter grade is F")
 
-#oppgave 4.
+
+# #oppgave 4.
+# numberA = float(input("Enter a number a: "))
+# numberB = float(input("Enter a number b: "))
+# operator = input("Enter an operator type (*, /, + or -) : ")
+
+# if operator == "*" :
+#     result = numberA * numberB
+#     print("The result is ", result)
+# elif operator == "/":
+#     result = numberA/numberB
+#     print("The result is", result)
+# elif operator == "+":
+#     result = numberA + numberB
+#     print("The result is", result)
+# elif operator == "-":
+#     result = numberA - numberB
+#     print("The result is", result)
+# else:
+#     print("ypur input is valid. Type an operator")
 
 #oppgave 5.
+
+weight = float(input("Type your weight: "))
+unit = input("Enter 1 if its Pound or 2 if its Kg: ")
+
+if unit == "1":
+    kg = weight * 0.45
+    print(f"You are {weight} pound, this is {kg} in kilos.")
+elif unit == "2":
+    pound = weight * 2.2
+    print(f"You are You are {weight} kg, this is {pound} in pounds.")
+else:
+    print("invalid unit.")
 
 
 #oppgave 6.
 
-string = input("enter a string (it can contain both numbers/lower/uppercase letters): ")
+# string = input("enter a string (it can contain both numbers/lower/uppercase letters): ")
 
-if string.isalpha():
-    print(f"The string {string} containts only letters")
-else:
-    print(f"The atring {string} does not have only letters.")
+# if string.isalpha():
+#     print(f"The string {string} containts only letters")
+# else:
+#     print(f"The atring {string} does not have only letters.")
 
-if string.isupper():
-    print("Contain only uppercase letters")
-else:
-    print("The string does not only contain uppercase letters")
+# if string.isupper():
+#     print("Contain only uppercase letters")
+# else:
+#     print("The string does not only contain uppercase letters")
 
-if string.islower():
-    print("The string contains only lowercase letters.")
-else:
-    print("the string does not only containt lowercase letters")
+# if string.islower():
+#     print("The string contains only lowercase letters.")
+# else:
+#     print("the string does not only containt lowercase letters")
 
-if string.isdigit():
-    print("The string contains only numbers")
-else:
-    print("the string does not only contain numbers")
+# if string.isdigit():
+#     print("The string contains only numbers")
+# else:
+#     print("the string does not only contain numbers")
 
-if string.isalnum():
-    print("The string only contains letters AND digits")
-else:
-    print("it does not only have letters and digits")
+# if string.isalnum():
+#     print("The string only contains letters AND digits")
+# else:
+#     print("it does not only have letters and digits")
 
-if string[0].isupper():
-    print("The string start with a uppercase letter")
-else:
-    print("does not start with upperc.")
+# if string[0].isupper():
+#     print("The string start with a uppercase letter")
+# else:
+#     print("does not start with upperc.")
 
-if string.endswith("."):
-    print("the string ends with a period.")
-else:
-    print(f"The string {string} does not end with a period. :-)))")
+# if string.endswith("."):
+#     print("the string ends with a period.")
+# else:
+#     print(f"The string {string} does not end with a period. :-)))")
 
 
 
