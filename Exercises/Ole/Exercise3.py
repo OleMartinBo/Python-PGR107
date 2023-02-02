@@ -56,18 +56,32 @@ print(linebreak)
 print(" ")
 
 
-#Oppgave 2
-print("Oppgave 2")
-userInput = int(input("Enter a number: "))
-print(linebreak)
-square = 0
+# #Oppgave 2
+# print("Oppgave 2")
+# userInput = int(input("Enter a number: "))
+# print(linebreak)
+# square = 0
 
-while square * square < userInput:
-  square = square + 1
-  print(square * square)
+# while square * square < userInput:
+#   square = square + 1
+#   print(square * square)
 
-print(linebreak)
-print(" ")
+# print(linebreak)
+# print(" ")
 
 #Oppgave 3
 print("Oppgave 3")
+
+c = 0
+f = 0
+maxGrense = int(input("Enter max: "))
+print(linebreak + "---------")
+print("%s" % "|","%5s" % "Celsius", "%6s" % "|", "%5s" % "Fahrenheit", "%4s" % "|")
+print(linebreak + "---------")
+
+while c <= maxGrense:
+    f = c * (9/5) + 32
+    print("%s" % "|", "%8s" % str(c), "%5s" % "|", "%10s" % str(f), "%4s" % "|")
+    print(linebreak + "---------")
+    c = c + 10
+ 
