@@ -52,3 +52,22 @@ while i > 0:
 #     j = n + 1
 #     print("%3s" % str(i), "%3s" % "|" , "%3s" % str(j),"%3s" % "|","%3s" % str(n), "%3s" % "|")
 #     print(linebreak)
+print(linebreak)
+print(" ")
+
+
+#Oppgave 2
+print("Oppgave 2")
+userInput = int(input("Enter a number: "))
+print(linebreak)
+square = 0
+
+while square * square < userInput:
+  square = square + 1
+  print(square * square)
+
+print(linebreak)
+print(" ")
+
+#Oppgave 3
+print("Oppgave 3")
