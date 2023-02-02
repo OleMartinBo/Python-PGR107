@@ -69,3 +69,4 @@
 #     n = n + 1
 #     print("%5s" % str(i), "%5s" % "|", "%5s" % str(j), "%5s" % "|", "%5s" % str(n), "%5s" % "|")
 #     print(linebreaker)
+
