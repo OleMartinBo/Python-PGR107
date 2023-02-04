@@ -115,3 +115,22 @@
 # else:
 #     avarage = 0
 
+inputStr = input("Write a sentence: ")
+count = 0
+inputStr = inputStr.lower()
+# while count < len(inputStr): 
+#     if inputStr[count].isupper():
+#         print(inputStr[count])
+    
+#     count = count + 1
+
+# while count < len(inputStr): 
+   
+#         print(inputStr[count], end= " ")
+#         count = count + 2
+new_s = inputStr
+vowels = ["a", "e", "i", "o", "u", "y", "æ", "ø", "å"]
+while count < len(vowels):
+    new_s = new_s.replace(vowels[count], "_")
+    count = count + 1
+print(new_s)
