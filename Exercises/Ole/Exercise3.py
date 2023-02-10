@@ -86,4 +86,5 @@ while c <= maxGrense:
     c = c + 10
 
 
-#Oppgave 4
+
+

@@ -168,7 +168,11 @@ else:
 
 #Alt til oppgave 8
 number = input("Enter a five-digit positive integer: ")
-print(number[0], number[1], number[2], number[3], number[4])
 
-print(" ")
+if number.isdigit() and len(number) == 5:
+    for digit in number:
+        print(digit, end=" ")
+else:
+    print("Invalid input. Please enter a five-digit positive integer.")
+
 
