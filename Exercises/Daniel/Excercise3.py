@@ -79,15 +79,15 @@
 #     i = i + 1
     
 
-c = 0
-f = c * (9/5) + 32
-linebreak = "-----------------------------"
-print("%s" % "Celsius", "%3s" % "|", "%s" % "Fahrenheit", "%s" % "|") 
+# c = 0
+# f = 0
+# linebreak = "-----------------------------"
+# print("%-10s" % "Celsius", "%s" % "Fahrenheit") 
 
-while c <= 100 : 
-    f = c * (9/5) + 32
-    print("%5s" % str(c), "%5s" % "|", "%7s" % str(f), "%3s" % "|")
-    c = c + 10
+# while c <= 100 : 
+#     f = c * (9/5) + 32
+#     print("%5s" % str(c), "%5s" % "|", "%5s" % str(f), "%5s" % "|")
+#     c = c + 10
 
 #4
 # list = [ "Harry"
@@ -115,3 +115,22 @@ while c <= 100 :
 # else:
 #     avarage = 0
 
+inputStr = input("Write a sentence: ")
+count = 0
+inputStr = inputStr.lower()
+# while count < len(inputStr): 
+#     if inputStr[count].isupper():
+#         print(inputStr[count])
+    
+#     count = count + 1
+
+# while count < len(inputStr): 
+   
+#         print(inputStr[count], end= " ")
+#         count = count + 2
+new_s = inputStr
+vowels = ["a", "e", "i", "o", "u", "y", "æ", "ø", "å"]
+while count < len(vowels):
+    new_s = new_s.replace(vowels[count], "_")
+    count = count + 1
+print(new_s)
