@@ -87,3 +87,56 @@ while c <= maxGrense:
 
 
 #Oppgave 4
+first_name = "Harry"
+last_name = "Morgan"
+scores = [94, 71, 86, 95, -1]
+
+total = 0
+count = 0
+
+while scores[count] != -1 :
+    total += scores[count]
+    count += 1
+    i += 1
+
+average = total/count
+print(" ")
+print("Oppgave 4")
+print(linebreak)
+print("Average score for", first_name, last_name, "is", average)
+
+
+#Oppgave 5
+print(" ")
+print("Oppgave 5")
+print(linebreak)
+
+s = input("Enter a string: ")
+uppercase_letters = ""
+i = 0
+while i < len(s):
+    if s[i].isupper():
+        uppercase_letters += s[i]
+    i += 1
+print("Uppercase letters:", uppercase_letters)
+
+
+s = input("Enter a string: ")
+every_second_letter = ""
+i = 1
+while i < len(s):
+    every_second_letter += s[i]
+    i += 2
+print("Every second letter:", every_second_letter)
+
+
+s = input("Enter a string: ")
+vowels = "aeiouAEIOU"
+new_s = s
+i = 0
+while i < len(vowels):
+    new_s = new_s.replace(vowels[i], "_")
+    i += 1
+print("String with vowels replaced:", new_s)
+
+
