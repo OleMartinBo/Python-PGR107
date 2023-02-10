@@ -1,5 +1,5 @@
 #Oppgave 1
-linebreak = "-----------------------"
+linebreak = "_" * 23
 
 #A
 i = 0
@@ -87,3 +87,55 @@ while c <= maxGrense:
 
 
 #Oppgave 4
+print("Oppgave 4")
+fname = input("Enter your first name: ")
+lname = input("Enter your last name: ")
+total = 0
+count = 0
+score = float(input("Enter a score (-1 to exit): "))
+while score != -1:
+    if score < 0 or score > 100:
+        print("Invalid score!")
+    else:
+        total = total + score
+        count = count + 1
+    
+    score = float(input("Enter a score (-1 to exit): "))
+    
+if count != 0:                              ### Why do you need to check if count 
+    avg = total / count
+    print("\nStudent:",fname, lname)
+    print("The Average Score = %.2f" % avg)
+else:
+    print("No valid score entered.")
+    
+#Oppgave 5
+print("Oppgave 5A")
+line = input("Enter a line of input: ")
+i = 0
+while i < len(line):
+    if line[i].isupper():
+        print(line[i])
+    
+    i = i + 1
+    
+print(linebreak)
+print("Oppgave 5B")
+
+line = input("Enter a line of input: ")
+i = 0
+while i < len(line):
+    print(line[i])
+    i = i + 2
+    
+print(linebreak)
+print("Oppgave 5C")
+line = input("Enter a line of input: ")
+i = 0
+while i < len(line):             
+    if line[i].upper() in "AEIOU" or line[i].lower() in "aeiou":   
+        print("_", end="")
+    else:
+        print(line[i], end="")
+        
+    i = i + 1
