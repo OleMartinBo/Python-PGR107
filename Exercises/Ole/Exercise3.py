@@ -13,6 +13,7 @@ while i < j :
   n = n + 1
   print("%3s" % str(i), "%3s" % "|" , "%3s" % str(j),"%3s" % "|","%3s" % str(n), "%3s" % "|")
   print(linebreak)
+  
 
 #B
 i = 0
@@ -139,3 +140,51 @@ while i < len(line):
         print(line[i], end="")
         
     i = i + 1
+
+print(linebreak)
+print("Oppgave 5D")
+line = input("Enter a line of input: ")
+i = 0
+digits = 0
+while i < len(line):
+    if line[i].isdigit():
+        digits += 1
+        
+    i = i + 1
+    
+print(f"There are {digits} digit(s) in the string.")
+
+print(linebreak)
+print("Oppgave 5E")
+line = input("Enter a line of input: ")
+i = 0
+vowel = False
+while i < len(line):
+    if line[i].upper() in "AEIOU" or line[i].lower() in "aeiou":
+        print(i, end=" ")
+        vowel = True
+        
+    i = i + 1
+if not vowel:
+    print("No vowels in the input.")
+    
+
+print(linebreak)
+print("Oppgave 6 Average")
+total = 0
+count = 0
+inputStr = input("Enter a floating-point number (Q to exit): ")
+while inputStr.upper() != "Q":
+    value = float(inputStr)
+    total = total + value
+    count = count + 1
+    inputStr = input("Enter a floating-point number (Q to exit): ")
+    
+if count != 0:
+    avg = total / count
+    print("Average = %.2f" % avg)
+else:
+    print("No valid input entered.")
+    
+print(linebreak)
+print("Oppgave 6 smallest, largest, and range")
