@@ -1,0 +1,82 @@
+{
+    "cards": [
+        {
+            "id": 1,
+            "name": "Ace of",
+            "value": 14
+            
+        },
+        {
+            "id": 2,
+            "name": "King of",
+            "value": 13
+            
+        },
+        {
+            "id": 3,
+            "name": "Queen of",
+            "value": 12
+            
+        },
+        {
+            "id": 4,
+            "name": "Jack of",
+            "value": 11
+            
+        },
+        {
+            "id": 5,
+            "name": "Ten of",
+            "value": 10
+            
+        },
+        {
+            "id": 6,
+            "name": "Nine of",
+            "value": 9
+            
+        },
+        {
+            "id": 7,
+            "name": "Eight of",
+            "value": 8
+            
+        },
+        {
+            "id": 8,
+            "name": "Seven of",
+            "value": 7
+            
+        },
+        {
+            "id": 9,
+            "name": "Six of",
+            "value": 6
+            
+        },
+        {
+            "id": 10,
+            "name": "Five of",
+            "value": 5
+            
+        },
+        {
+            "id": 11,
+            "name": "Four of",
+            "value": 4
+          
+        },
+        {
+            "id": 12,
+            "name": "Three of",
+            "value": 3
+    
+        },
+        {
+            "id": 13,
+            "name": "Two of",
+            "value": 2
+            
+        }
+    ]
+}
