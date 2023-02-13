@@ -105,7 +105,7 @@ print(linebreak, space)
 print("Oppgave 5: ")
 
 for i in range(4) :
-    for j in range(i + 1) :
+    for x in range(i + 1) :
         print("*", end="")
     print()
 print(linebreak, space)  
@@ -114,7 +114,7 @@ print(linebreak, space)
 print("Oppgave 6A: ")
 for i in range(5):
     for j in range(5):
-        if i % 3 == 0 or i % 3 == 2:
+        if i == 0 or i == 2:
             print("X", end="")
         elif j == 2:
             break
@@ -126,15 +126,10 @@ print(linebreak, space)
     
 print("Oppgave 6B: ")
 for i in range(5):
-    for j in range(5):
-        if i == 0 or i == 2:
-            print("X", end="")
-        elif j == 0 and i % 2 != 0:
-            print("X", end="")
-        else:
-            print(" ", end="")
-    print("")
-
+    if i < 4:
+        print("XX")
+    else:
+        print("XXXXX")
 
 
 
