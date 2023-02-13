@@ -2,79 +2,309 @@
     "cards": [
         {
             "id": 1,
-            "name": "Ace of",
+            "name": "Ace of hearts",
             "value": 14
-            
         },
         {
             "id": 2,
-            "name": "King of",
+            "name": "King of hearts",
             "value": 13
             
         },
         {
             "id": 3,
-            "name": "Queen of",
+            "name": "Queen of hearts",
             "value": 12
             
         },
         {
             "id": 4,
-            "name": "Jack of",
+            "name": "Jack of hearts",
             "value": 11
             
         },
         {
             "id": 5,
-            "name": "Ten of",
+            "name": "Ten of hearts",
             "value": 10
             
         },
         {
             "id": 6,
-            "name": "Nine of",
+            "name": "Nine of hearts",
             "value": 9
             
         },
         {
             "id": 7,
-            "name": "Eight of",
+            "name": "Eight of hearts",
             "value": 8
             
         },
         {
             "id": 8,
-            "name": "Seven of",
+            "name": "Seven of hearts",
             "value": 7
             
         },
         {
             "id": 9,
-            "name": "Six of",
+            "name": "Six of hearts",
             "value": 6
             
         },
         {
             "id": 10,
-            "name": "Five of",
+            "name": "Five of hearts",
             "value": 5
             
         },
         {
             "id": 11,
-            "name": "Four of",
+            "name": "Four of hearts",
             "value": 4
           
         },
         {
             "id": 12,
-            "name": "Three of",
+            "name": "Three of hearts",
             "value": 3
     
         },
         {
             "id": 13,
-            "name": "Two of",
+            "name": "Two of hearts",
+            "value": 2
+            
+        },
+        {
+            "id": 14,
+            "name": "Ace of spades",
+            "value": 14
+        },
+        {
+            "id": 15,
+            "name": "King of spades",
+            "value": 13
+            
+        },
+        {
+            "id": 16,
+            "name": "Queen of spades",
+            "value": 12
+            
+        },
+        {
+            "id": 17,
+            "name": "Jack of spades",
+            "value": 11
+            
+        },
+        {
+            "id": 18,
+            "name": "Ten of spades",
+            "value": 10
+            
+        },
+        {
+            "id": 19,
+            "name": "Nine of spades",
+            "value": 9
+            
+        },
+        {
+            "id": 20,
+            "name": "Eight of spades",
+            "value": 8
+            
+        },
+        {
+            "id": 21,
+            "name": "Seven of spades",
+            "value": 7
+            
+        },
+        {
+            "id": 22,
+            "name": "Six of spades",
+            "value": 6
+            
+        },
+        {
+            "id": 23,
+            "name": "Five of spades",
+            "value": 5
+            
+        },
+        {
+            "id": 24,
+            "name": "Four of spades",
+            "value": 4
+          
+        },
+        {
+            "id": 25,
+            "name": "Three of spades",
+            "value": 3
+    
+        },
+        {
+            "id": 26,
+            "name": "Two of spades",
+            "value": 2
+            
+        },
+        {
+            "id": 27,
+            "name": "Ace of diamonds",
+            "value": 14
+        },
+        {
+            "id": 28,
+            "name": "King of diamonds",
+            "value": 13
+            
+        },
+        {
+            "id": 29,
+            "name": "Queen of diamonds",
+            "value": 12
+            
+        },
+        {
+            "id": 30,
+            "name": "Jack of diamonds",
+            "value": 11
+            
+        },
+        {
+            "id": 31,
+            "name": "Ten of diamonds",
+            "value": 10
+            
+        },
+        {
+            "id": 32,
+            "name": "Nine of diamonds",
+            "value": 9
+            
+        },
+        {
+            "id": 33,
+            "name": "Eight of diamonds",
+            "value": 8
+            
+        },
+        {
+            "id": 34,
+            "name": "Seven of diamonds",
+            "value": 7
+            
+        },
+        {
+            "id": 35,
+            "name": "Six of diamonds",
+            "value": 6
+            
+        },
+        {
+            "id": 36,
+            "name": "Five of diamonds",
+            "value": 5
+            
+        },
+        {
+            "id": 37,
+            "name": "Four of diamonds",
+            "value": 4
+          
+        },
+        {
+            "id": 38,
+            "name": "Three of diamonds",
+            "value": 3
+    
+        },
+        {
+            "id": 39,
+            "name": "Two of diamonds",
+            "value": 2
+            
+        },
+        {
+            "id": 40,
+            "name": "Ace of clubs",
+            "value": 14
+        },
+        {
+            "id": 41,
+            "name": "King of clubs",
+            "value": 13
+            
+        },
+        {
+            "id": 42,
+            "name": "Queen of clubs",
+            "value": 12
+            
+        },
+        {
+            "id": 43,
+            "name": "Jack of clubs",
+            "value": 11
+            
+        },
+        {
+            "id": 44,
+            "name": "Ten of clubs",
+            "value": 10
+            
+        },
+        {
+            "id": 45,
+            "name": "Nine of clubs",
+            "value": 9
+            
+        },
+        {
+            "id": 46,
+            "name": "Eight of clubs",
+            "value": 8
+            
+        },
+        {
+            "id": 47,
+            "name": "Seven of clubs",
+            "value": 7
+            
+        },
+        {
+            "id": 48,
+            "name": "Six of clubs",
+            "value": 6
+            
+        },
+        {
+            "id": 49,
+            "name": "Five of clubs",
+            "value": 5
+            
+        },
+        {
+            "id": 50,
+            "name": "Four of clubs",
+            "value": 4
+          
+        },
+        {
+            "id": 51,
+            "name": "Three of clubs",
+            "value": 3
+    
+        },
+        {
+            "id": 52,
+            "name": "Two of clubs",
             "value": 2
             
         }
