@@ -29,7 +29,7 @@ def display_costumer_service():
         print(i)
     
     
-while True:
+while userInput != "Q":
     userInput = input("You: ")
     
     if userInput.lower() == "goodbye":

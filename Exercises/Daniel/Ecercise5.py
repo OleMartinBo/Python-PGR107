@@ -74,3 +74,44 @@
 
 # print(result)
 
+#oppgave 5
+
+
+
+def celciusToFahrenheit(C):
+    F = (9/5)*C + 32
+    return F 
+
+def fahrenheitToCelsius(F):
+    C = (5/9)*(F-32)
+    return C 
+
+def menu():
+    
+    print("Enter 1 to convert from Celsius to Farhenheit")
+    print("Enter 2 to convert from Farhenheit to Celsius")
+    print("Enter a negative number to quit")
+    userInput = input("You: ")
+    while True:
+        if int(userInput) <= 0:
+            break
+        
+        if userInput == "1":
+            celsius = float(input("Enter Celsius: "))
+            print("%.2f %s %.2f %s" % (celsius, "degrees celsius is:", celciusToFahrenheit(celsius), "degrees fahrenheit")  )
+        
+        elif userInput == "2":
+            fahrenheit = float(input("Enter Fahrenheit: "))
+            print("%.2f %s %.2f %s" % (fahrenheit, "degrees Fahrenheit is:", fahrenheitToCelsius(fahrenheit), "degrees Celsius")  )
+        else: 
+            print("wrong input")
+        print()
+        print("Enter 1 to convert from Celsius to Farhenheit")
+        print("Enter 2 to convert from Farhenheit to Celsius")
+        print("Enter a negative number to quit")
+        print()
+        userInput = int(input("Enter 1 or 2: "))
+        
+
+menu()
+ 
