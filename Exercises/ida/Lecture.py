@@ -136,3 +136,16 @@ if theSubString in theString:
 else:
     print("The string does not contain the substring.")
 
+
+
+#Lecture 5 - functions 
+
+def boxString(content):
+    n = len(content)
+    if n == 0:
+        return
+    print("-" * (n+2))
+    print("!" + content + "!")
+    print("-" * (n+2))
+boxString("Hello")
+
