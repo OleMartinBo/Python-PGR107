@@ -11,27 +11,22 @@ def guessingGame():
     
 
     userInput = int(input("Type your guess: "))
+    
+        
+        
 
     count = 0
     
     play = True
     
     while play:
-        if count >= 4:
-            print(f"You have failed to guess the number. The number was {randomNumber} Do you want to play again?")
-            userInput = int(input("1 for yes, any other number for no: "))
-            if userInput == 1:
-                guessingGame()
-            else: 
-                print("Okey bye!")
-                play = False
-            
+        if userInput < 1 or userInput > 1000:
+            print("The number you put in is not in the range")
+            guessingGame()
         else:
-            if userInput == randomNumber:
-                count += 1
-                print(f"Correct!!! You guessed it in {count} tries. Do you want to play again?")
+            if count >= 4:
+                print(f"You have failed to guess the number. The number was {randomNumber} Do you want to play again?")
                 userInput = int(input("1 for yes, any other number for no: "))
-                
                 if userInput == 1:
                     guessingGame()
                 else: 
@@ -39,13 +34,25 @@ def guessingGame():
                     play = False
                 
             else:
-                count += 1
-                if userInput < randomNumber: 
-                    print(f"Wrong! The number is too low. You have {5 - count} tries left.")
-                    userInput = int(input("Type your guess: "))
-                
-                elif userInput > randomNumber: 
-                    print(f"Wrong! The number is too high. You have {5 - count} tries left.")
-                    userInput = int(input("Type your guess: "))
+                if userInput == randomNumber:
+                    count += 1
+                    print(f"Correct!!! You guessed it in {count} tries. Do you want to play again?")
+                    userInput = int(input("1 for yes, any other number for no: "))
+                    
+                    if userInput == 1:
+                        guessingGame()
+                    else: 
+                        print("Okey bye!")
+                        play = False
+                    
+                else:
+                    count += 1
+                    if userInput < randomNumber: 
+                        print(f"Wrong! The number is too low. You have {5 - count} tries left.")
+                        userInput = int(input("Type your guess: "))
+                    
+                    elif userInput > randomNumber: 
+                        print(f"Wrong! The number is too high. You have {5 - count} tries left.")
+                        userInput = int(input("Type your guess: "))
                     
 guessingGame()
