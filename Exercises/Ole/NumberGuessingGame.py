@@ -6,41 +6,58 @@ def game() :
 #Variabler 
     value = randint(1,1000)
     counter = 0
+    attempts = 5
     
-#Logikk
+#Logikk for spillet 
     while counter != 5 :
         
-        userIput = int(input("Enter a number: "))
+        userInput = int(input("Enter a number: "))
         
-        if userIput == value :
+        if userInput == value :
             print("Congratulation! You guessed the number in:", counter ,"attempt(s)”")
             print("------------------------------------------------------------------")
             print(" ")
             break
-        elif userIput < value :
+        elif userInput < value :
             print("The number is Higher")
             print("-------------------")
             print(" ")
-        elif userIput > value :
+        elif userInput > value :
             print("The number is lower")
             print("-------------------")
             print(" ")
         
-            
         counter += 1
+        print("You got:",attempts - counter ,"attempts left")
+        print("-------------------")
+        print(" ")
+        
         if counter == 5 :
-            print("Sorry!! You did not manage to guess the number.\nYou have reached the guessing limit.\nThe number was:", value)
+            print("Sorry!! You did not manage to guess the number.\nYou have reached the guessing limit", counter,".\nThe number was:", value)
             print("-------------------------------------------------")
             print(" ")
             
             
-
-
-game()
-
+#Menyen for spillet 
 def menu():
-    choice = str(input("Enter YES to play again or NO to quit: "))
     
-    while choice.lower or choice.upper == "yes" :
-        game()
+    print("Welcome to Number Guessing Game!")
+    print("--------------------------------")
     
+    while True:
+        choice = input("Enter YES to play again or NO to quit: ")
+        print("-----------------------------------------------------")
+        print(" ")
+
+        if choice.lower() == "yes":
+            game()
+        elif choice.lower() == "no":
+            print("Goodbye!")
+            break
+        else:
+            print("Not a valid input! Enter YES or NO")
+
+            
+#Kjører programmet 
+menu()
+            
