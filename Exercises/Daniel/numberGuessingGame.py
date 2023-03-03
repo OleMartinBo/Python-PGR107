@@ -34,11 +34,11 @@ def guessingGame():
                 if userInput == randomNumber:
                     count += 1
                     print(f"Correct!!! You guessed it in {count} tries. Do you want to play again?")
-                    userInput = int(input("1 for yes, any other number for no: "))
+                    userInput = int(input("1 for yes, 0 for no: "))
                     
                     if userInput == 1:
                         guessingGame()
-                    else: 
+                    elif userInput == 0:
                         print("Okey bye!")
                         play = False
                     
