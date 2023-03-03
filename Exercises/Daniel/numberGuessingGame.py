@@ -12,9 +12,6 @@ def guessingGame():
 
     userInput = int(input("Type your guess: "))
     
-        
-        
-
     count = 0
     
     play = True
@@ -26,10 +23,10 @@ def guessingGame():
         else:
             if count >= 4:
                 print(f"You have failed to guess the number. The number was {randomNumber} Do you want to play again?")
-                userInput = int(input("1 for yes, any other number for no: "))
+                userInput = int(input("1 for yes, 0 for no: "))
                 if userInput == 1:
                     guessingGame()
-                else: 
+                elif userInput == 0: 
                     print("Okey bye!")
                     play = False
                 
