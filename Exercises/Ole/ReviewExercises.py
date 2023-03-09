@@ -91,8 +91,53 @@ def triangle():
             
         print("The shape you have is", shape)
         
-        
-    
 #triangle()
 
 #Oppgave 5
+def seasons():
+    
+    inputMonth = input("Enter a month: ")
+    inputDay = int(input("Enter a number: "))
+    
+    if inputDay < 1 or inputDay > 31 :
+        print("there is no day out")
+    else :
+        if inputMonth == "januar" or inputMonth == "february" :
+            season = "winter"
+        elif inputMonth == "march" :
+            if inputDay < 20 :
+                season = "winter"
+            else :
+                season = "spring"
+        elif inputMonth == "april" or inputMonth == "mai" : 
+            season = "spring"
+        elif inputMonth == "june" :
+            if inputDay < 21 :
+                season = "spring"
+            else :
+                season = "summer"
+        elif inputMonth == "juli" or inputMonth == "august" :
+            season = "summer"
+        elif inputMonth == "september" :
+            if inputDay < 22 :
+                season = "summer"
+            else :
+                season = "fall"
+        elif inputMonth == "october" or inputMonth == "november" :
+            season = "fall"
+        elif inputMonth == "desember" :
+            if inputDay < 21 :
+                season = "fall"
+            else :
+                season = "winter"
+        else :
+            inputMonth = ""
+            
+        
+        if inputMonth != "" :
+            print("The season is", season, "in month", inputMonth, inputDay)
+        else :
+            print("there where no valid month or day")
+
+    
+seasons()
