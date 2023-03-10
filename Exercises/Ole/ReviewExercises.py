@@ -91,7 +91,7 @@ def triangle():
             
         print("The shape you have is", shape)
         
-#triangle()
+triangle()
 
 #Oppgave 5
 def seasons():

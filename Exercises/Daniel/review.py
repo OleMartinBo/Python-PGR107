@@ -37,3 +37,33 @@ def determineSides():
 
 # determineSides()
 
+#Oppgave 3
+
+def determineDays():
+    userInput = input("What month? ")
+    if userInput.lower() == "january" or userInput.lower() == "march" or userInput.lower() == "may" or userInput.lower() == "july" or userInput.lower() == "august" or userInput.lower() == "october" or userInput.lower() == "desember":
+        print("31 days")
+    elif userInput.lower() == "febuary":
+        print("Febuary can be either 28 or 29 days.")
+    elif userInput.lower() == "april" or userInput.lower() == "juni" or userInput.lower() == "september" or userInput.lower() == "november":
+        print("30 days")
+    else:
+        print("Your input is wrong idiot")
+
+# determineDays()
+
+#Oppgave 4
+
+def whatTriangle():
+    userInput1 = int(input("Write the lenght of side 1: "))
+    userInput2 = int(input("Write the lenght of side 2: "))
+    userInput3 = int(input("Write the lenght of side 3: "))
+    if userInput1 == userInput2 and userInput1 == userInput3:
+        triangle = "Equilateral"
+    elif userInput1 == userInput2 or userInput2 == userInput3 or userInput1 == userInput3:
+        triangle = "Isoseles"
+    else:
+        triangle = "Scalene"
+    print(f"Your triangle is {triangle}")
+
+whatTriangle()
