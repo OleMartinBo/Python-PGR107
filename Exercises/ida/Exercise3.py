@@ -225,3 +225,7 @@ index = len(wordInput) - 1
 while index >= 0:
     print(wordInput[index], end="")
     index -= 1
+
+
+
+    

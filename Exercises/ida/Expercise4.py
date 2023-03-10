@@ -1,8 +1,14 @@
 
-taskDone = "\n End of task \n"
-lineBreak = "-" * 20
+def headingTask(contents) :
+     n = len(contents)
+     print( "\n" + ("-" * (n)) + "\n")
+     print(contents)
+     print( "\n" + ("-" * (n)) + "\n")
 
 #Oppgave 1 
+
+headingTask(" Task 1")
+print(headingTask)   
 
 for rows in range(1, 10) :
     print(rows, end="")
@@ -20,10 +26,11 @@ for rows in range(1,10):
    if rows % 2 == 0:
        print(rows, end="")
 
-print(taskDone, lineBreak)
 
 #Oppgave 2 
 
+headingTask("Task 2")
+print(headingTask)   
 
 inputLine = input("Enter a line of input: ")
 
@@ -75,9 +82,10 @@ for char in inputLine:
         vowels += 1
 print("number of vowels in input: ", vowels)
 
-print(taskDone, lineBreak)
 
 #Oppgave 3
+headingTask("Task 3")
+print(headingTask)   
 
 #Reads input in separat line with for-loop
 
@@ -85,9 +93,10 @@ wordInput = input("Enter a word: ")
 for char in wordInput:
     print(char)
 
-print(taskDone, lineBreak)
 
 #Oppgave 4
+headingTask("Task 4")
+print(headingTask)   
 
 wordInput = input("Enter a word: ")
 
@@ -97,9 +106,11 @@ for char in wordInput:
 
 print(wordReverse)
 
-print(taskDone, lineBreak)
 
 #Oppgave 5 - NESTED FOR-LOOP
+
+headingTask("Task 5")
+print(headingTask)   
 
 row = 5
 for rows in range(row):
@@ -107,9 +118,11 @@ for rows in range(row):
         print("*", end="")
     print()
 
-print(taskDone, lineBreak)
 
 #Oppgave 6 - NESTED FOR-LOOP
+
+headingTask("Task 6")
+print(headingTask)   
 
 for rows in range(5):
     if rows % 2 == 0:  #ser om linjen er even eller odd 
@@ -123,4 +136,3 @@ for rows in range(5):
     else:
         print("XX")
         
-print(taskDone, lineBreak)
