@@ -91,53 +91,176 @@ def triangle():
             
         print("The shape you have is", shape)
         
-triangle()
-
-#Oppgave 5
-def seasons():
-    
-    inputMonth = input("Enter a month: ")
-    inputDay = int(input("Enter a number: "))
-    
-    if inputDay < 1 or inputDay > 31 :
-        print("there is no day out")
-    else :
-        if inputMonth == "januar" or inputMonth == "february" :
-            season = "winter"
-        elif inputMonth == "march" :
-            if inputDay < 20 :
-                season = "winter"
-            else :
-                season = "spring"
-        elif inputMonth == "april" or inputMonth == "mai" : 
-            season = "spring"
-        elif inputMonth == "june" :
-            if inputDay < 21 :
-                season = "spring"
-            else :
-                season = "summer"
-        elif inputMonth == "juli" or inputMonth == "august" :
-            season = "summer"
-        elif inputMonth == "september" :
-            if inputDay < 22 :
-                season = "summer"
-            else :
-                season = "fall"
-        elif inputMonth == "october" or inputMonth == "november" :
-            season = "fall"
-        elif inputMonth == "desember" :
-            if inputDay < 21 :
-                season = "fall"
-            else :
-                season = "winter"
-        else :
-            inputMonth = ""
-            
         
-        if inputMonth != "" :
-            print("The season is", season, "in month", inputMonth, inputDay)
-        else :
-            print("there where no valid month or day")
-
     
-seasons()
+#triangle()
+
+#Oppgave 6
+def animalYear() :
+    
+    year = int(input("Enter a year: "))
+    
+    if year < 0 :
+        print("invalid year")
+    else :
+        if year % 12 == 8 :
+            animal = "Dragon"
+        elif year % 12 == 9 :
+            animal = "snake"
+        elif year % 12 == 10 :
+            animal = "Horse"
+        elif year % 12 == 11 :
+            animal = "Sheep"
+        elif year % 12 == 0 :
+            animal = "Monkey"
+        elif year % 12 == 1 :
+            animal = "Rooster"
+        elif year % 12 == 2 :
+            animal = "Dog"
+        elif year % 12 == 3 :
+            animal = "Pig"
+        elif year % 12 == 4 :
+            animal = "Rat"
+        elif year % 12 == 5 :
+            animal = "Ox"
+        elif year % 12 == 6 :
+            animal = "Tiger"
+        else :
+            animal = "hare"
+        
+        print(year, "are the year of",animal)
+        
+#animalYear()
+
+#Oppgave 7
+def rating():
+    
+    inputValue = float(input("Enter value 0.0 or 0.4 or 0.6: "))
+    
+    if inputValue == 0.0 :
+        value = "Unacceptable preformance"
+    elif inputValue == 0.4 :
+        value = "Acceptable preformance"
+    elif inputValue >= 0.6 :
+        value = "Meritorious preformance"
+    else :
+        value = ""
+    
+    if value == "" :
+        print("Invalid")
+    else :
+        print("Your preformance is", value, "The raise you will have is", inputValue * 2400.00)
+        
+        
+#rating()
+
+#Oppgave 8
+
+def salary():
+    
+    hours = int(input("Enter the hours worked: "))
+    if hours < 0 :
+        print("invalid")
+    elif hours < 40 :
+        salary = hours * 8
+        print("Your salary is", salary)
+    else :
+        salary = 320 + (hours -40) * 12
+        
+    #print("Salary:", salary)
+    
+#salary()
+
+#Oppgave 9
+def salaryStatus() :
+    
+    #Variabler
+    salaryValueSenior = 800
+    senior = "s"
+    
+    salaryValueJunior = 375
+    junior = "j"
+    
+    #Input
+    charInput = input("Enter status s/j: ")
+    
+    #IF function
+    if charInput.lower() == senior :
+        print("The value of your salary is:", salaryValueSenior)
+    elif charInput.lower() == junior :
+        print("The value of your salary is:", salaryValueJunior)
+    else :
+        print("invalid")
+        
+#salaryStatus()
+
+#Oppgave 10
+def whileLoop() :
+    
+    x = 1
+    while x <= 5 :
+        #Lager ny variabel Y 
+        y = 1 + x + (x ** 2) /2+ (x ** 3)/6 + (x ** 4)/24
+        print("x =", x, "-->" "f",x ,"=", y)
+        #Legger til 1 til x per runde opp til eller lik 5
+        x = x + 1
+        
+#whileLoop()
+    
+    
+def forLoop() :
+    #Kjører fem ganger fram til den avslutter på 6 omgang
+    for x in range(1, 6):
+        y = 1 + x + (x ** 2)/2 + (x ** 3)/6 + (x ** 4)/24
+        print(f"x = {x} --> f(x) = {y : .2f}")
+
+#forLoop()
+
+#Oppgave 11
+def coinToss() :
+    from random import randint
+    
+    heads = 0
+    tails = 0
+    count = 0
+    
+    while count < 1000 :
+        coin = randint(1,2)
+        if coin == 1 :
+            heads = heads + 1 
+        else :
+            tails = tails + 1
+        count = count + 1
+    
+    print("Heads=", heads,"\nTails=" , tails)
+    
+#coinToss()
+
+#Oppgave 12
+from math import pi
+
+def program() :
+    
+    radius = int(input("Enter the radius: "))
+    volume = sphere(radius)
+    print("The volume of the sphere is", volume)
+    
+def sphere(r) :
+    volume = (4/3) * pi * r ** 3
+    return volume
+
+#program()
+
+#Oppgave 13
+def main():
+    x = float(input("Enter x: "))
+    result = g(x)
+    print(f"x = {x} --> g(x) = {result}")
+    
+def g(x):
+    if x < 1:
+        return -(x * x) + 4
+    else:
+        return 2 * x - 1
+    
+main()
