@@ -193,4 +193,4 @@
 
 #Forelesning lists
 
-my_list = []
+#set
