@@ -82,7 +82,7 @@ for i in range(0, 10) :
   
 """
 
-"""
+
 #Task 2
 
 
@@ -149,6 +149,7 @@ for elem in values:
 print(f"The list contains {values} values. In this list the even values are: {even_values}, and the odd values are: {odd_values}")
 
 
+
 #Task 5. Consider the list generated in Exercise 2 (values) and remove the odd elements from the list.
 
 print("The orginal list is: ", values)
@@ -172,9 +173,9 @@ for i in range(20):
 print("The sorted list: ", values, end=" ")
 
 
+
 #task 7. Write a function def same_list (a, b) that checks whether two lists have the same elements in some order,
 # ignoring duplicates. For example, the two lists
-
 
 def same_list(a, b):
     sorted_a = sorted(set(a))
@@ -192,48 +193,11 @@ else:
 
     
 
-
-#9. Write a function remove_min that removes the minimum value 
-# from a list without using the min function or remove method.
-
-def remove_min():
-    value_list = [30, 50, 90, 10, 10, 20]
-    print("Original list: ", value_list)
-
-#finne min value:
-    min_val = value_list[0]
-    for num in value_list:
-        if num < min_val:
-            min_val = num
-
-#2.sjekke gjennom hver [i] == min value + del for å fjerne den verdien som er lik
-# ved å bruke break vil den exite loopen med en gang den finner matchende min value --> fjerner ikke duplikater     
-    for i in range(len(value_list)):
-        if value_list[i] == min_val:
-            del value_list[i]
-            break 
-    print("List after removing min value: ", value_list )
-
-#remove_min()
-
-# Task 10. Write a program that removes duplicate tuples from a list of tuples.
-
-def removeDuplicates(tupleList): 
-    return list(set([i for i in tupleList])) #gjør list om til set(=unik)
-
-tupleList = [(1, 2), (5, 7), (1, 2), (4, 3), (1, 2)]
-
-print("The original tuple list: ", tupleList)
-print("Tuple list without duplicate: ", removeDuplicates(tupleList))
-
-
-""" 
-
 #8. Write a function sum_without_smallest that computes the sum of a list of 10 random values between 1
 #and 100, except for the smallest one, in a single loop. In the loop, update the sum and the smallest value.
-#After the loop, subtract the smallest value from the sum and return the difference
+#After the loop, subtract the smallest value from the sum and return the difference..
+        #usikker om riktig - Forstod ikke helt oppgaven??
 
-""" 
 
 def sum_without_smallest():
     random_lst = []
@@ -255,21 +219,40 @@ def sum_without_smallest():
 
 sum_without_smallest()
 
-"""
-import random
 
-def sum_without_smallest():
-    # initialize the sum and smallest value
-    lst = [random.randint(1, 100) for i in range(10)]
-    smallest = min(lst)
-    total_sum = sum(lst)
-    
-    # compute the sum without the smallest value
-    for val in lst:
-        if val == smallest:
-            continue
-        total_sum -= smallest
-    
-    return total_sum
 
-sum_without_smallest()
+#9. Write a function remove_min that removes the minimum value 
+# from a list without using the min function or remove method.
+
+def remove_min():
+    value_list = [30, 50, 90, 10, 10, 20]
+    print("Original list: ", value_list)
+
+#finne min value:
+    min_val = value_list[0]
+    for num in value_list:
+        if num < min_val:
+            min_val = num
+
+#2.sjekke gjennom hver [i] == min value + del for å fjerne den verdien som er lik
+# ved å bruke break vil den exite loopen med en gang den finner matchende min value --> fjerner ikke duplikater  
+   
+    for i in range(len(value_list)):
+        if value_list[i] == min_val:
+            del value_list[i]
+            break 
+    print("List after removing min value: ", value_list )
+
+#remove_min()
+
+
+
+# Task 10. Write a program that removes duplicate tuples from a list of tuples.
+
+def removeDuplicates(tupleList): 
+    return list(set([i for i in tupleList])) #gjør liste om til set(pga set=unik)
+
+tupleList = [(1, 2), (5, 7), (1, 2), (4, 3), (1, 2)]
+
+print("The original tuple list: ", tupleList)
+print("Tuple list without duplicate: ", removeDuplicates(tupleList))
