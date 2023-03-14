@@ -47,17 +47,59 @@ def oppone() :
     
 #oppone()
 
-#oppgave 2
-def emptyList():
+#oppgave 2, 3, 4 og 5
+def listTypes():
     from random import randint
     values = []
     i = 0
    
-    
     while i < 10 :
-        values.append(randint(1, 100)) 
+        value = randint(1, 100)
+        values.append(value) 
         i += 1        
     print(values)
+    print(" ")
 
-emptyList()
-        
+    for value in values :
+        print(value, end=" ")
+    print()
+    print(" ")
+
+    total = 0
+    for value in values :
+        total = total + value
+    print(total)
+    print(" ")
+    
+    evenNumbers = 0
+    for value in values :
+        if value % 2 == 0 :
+            evenNumbers += 1
+    print(evenNumbers)
+    print(" ")
+            
+    evenList = []
+    oddList = []
+    for value in values:
+        if value % 2 == 0 :
+            evenList.append(value)
+        else :
+            oddList.append(value)
+    print("Even numbers=", evenList)
+    print("Odd numbers=", oddList)
+    print(" ")
+
+    for value in values:
+        if value % 2 != 0 :
+            values.remove(value)
+    
+    print("Removed odd numbers, even numbers left in list=",values)
+    print(" ")
+    
+
+listTypes()
+
+#Oppgave 6
+
+
+
