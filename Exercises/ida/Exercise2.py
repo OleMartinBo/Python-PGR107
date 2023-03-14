@@ -1,3 +1,8 @@
+"""
+DECISIONS
+
+"""
+
 # oppgave1
 # from cmath import sqrt
 

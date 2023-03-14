@@ -1,4 +1,8 @@
 
+"""
+PROGRAMMING WITH NUMBERS AND STRINGS
+
+"""
 
 # print("----- oppgave 1 -----")
 

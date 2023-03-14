@@ -1,3 +1,8 @@
+"""
+FUNCTIONS
+
+"""
+
 lineBreak = "-"*20 + "\n"
 
 #Oppgave 1
