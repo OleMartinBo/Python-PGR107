@@ -176,7 +176,28 @@ def sumWithoutMin():
     sum = sum - randomList[0]
     print(f"The Sum is: {sum}")
 
-sumWithoutMin()
+# sumWithoutMin()
+list1 = [(1,2), (4,3), (5,6), (1,2), (3,4)]
+def isDoubleTuple():
+    list2 = []
+    for tuple in list1:
+        if tuple in list2:
+            list1.remove(tuple)
+        else:
+            list2.append(tuple)
+    return list2
+
+# print(isDoubleTuple())
+
+def generateRaise(rate):
+    
+    rate = float(input("Is your interest 0.0 0.4 or 0.6? "))
+    
+    if rate == 0.0:
+        pass
+        
+        
+    
     
 
 

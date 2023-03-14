@@ -66,4 +66,39 @@ def whatTriangle():
         triangle = "Scalene"
     print(f"Your triangle is {triangle}")
 
-whatTriangle()
+# whatTriangle()
+
+#oppgave 5
+def defineSeason():
+    userMonth = input("What month? ")
+    userDate = int(input("What date? "))
+    season = ""
+    if userMonth.lower() == "desember" or userMonth.lower() == "january" or userMonth.lower() == "febuary":
+        if userMonth.lower() == "desember" and userDate < 21:
+            season = "Autumn"
+        else:
+            season = "Winter"
+    elif userMonth.lower() == "march" or userMonth.lower() == "april" or userMonth.lower() == "may":
+        if userMonth.lower() == "march" and userDate < 21:
+            season = "Winter"
+        else: 
+            season = "Spring"
+    elif userMonth.lower() == "june" or userMonth.lower() == "july" or userMonth.lower() == "august":
+        if userMonth.lower() == "june" and userDate < 21:
+            season = "Spring"
+        else:
+            season = "Summer"
+    elif userMonth.lower() == "september" or userMonth.lower() == "october" or userMonth.lower() == "november":
+        if userMonth.lower() == "august" and userDate < 21:
+            season = "Summer"
+        else:
+            season = "Autumn"
+    else: 
+        print("Your input is wrong IDIOT")
+    
+    print(f"{userDate} {userMonth} is in: {season}")
+    
+defineSeason()
+    
+        
+    
