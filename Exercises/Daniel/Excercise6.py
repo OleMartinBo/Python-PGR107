@@ -120,13 +120,15 @@ def evenOrOdd():
 # evenOrOdd()
 
 def removeOdd():
+    i = 0
+    print(f"This is the old list: {randomLists}")
+    while i < len(randomLists):
+        if randomLists[i] % 2 == 1:
+            randomLists.pop(i)
+        else: 
+            i += 1     
     
-    for element in randomLists:
-        if element % 2 == 1:
-            
-            randomLists.remove(element)      
-    
-    print(f"{randomLists}")
+    print(f"This is the new list: {randomLists}")
 
 # removeOdd()
 sortingList = []
@@ -137,8 +139,66 @@ def sorting():
     sortingList.sort()
     print(f"This is the sorted list:   {sortingList}")
 
-sorting()
+# sorting()
 
+firstList = [1,4,9,16,9,7,4,9,11]
+SecondList = [11,11,7,9,16,4,1]
+
+def isSameList(a,b):
+    
+    if a == b:
+        print("It's the same list")
+    else:
+        print("It's not the same list")
+    
+    
+# isSameList(firstList, SecondList)
+
+
+# Oppgave 8
+
+def sumWithoutMin():
+    randomList = []
+    sum = 0
+    
+    for i in range(10):
+        randomList.append(random.randint(1,100))
+    
+    randomList.sort()
+    minNum = min(randomList)
+    print(randomList)
+    for element in randomList:
+        if element == randomList[0]:
+            randomList.pop(0)
+        else:
+            sum = sum + element
+    
+    sum = sum - randomList[0]
+    print(f"The Sum is: {sum}")
+
+# sumWithoutMin()
+list1 = [(1,2), (4,3), (5,6), (1,2), (3,4)]
+def isDoubleTuple():
+    list2 = []
+    for tuple in list1:
+        if tuple in list2:
+            list1.remove(tuple)
+        else:
+            list2.append(tuple)
+    return list2
+
+# print(isDoubleTuple())
+
+def generateRaise(rate):
+    
+    rate = float(input("Is your interest 0.0 0.4 or 0.6? "))
+    
+    if rate == 0.0:
+        pass
+        
+        
+    
+    
 
 
 
