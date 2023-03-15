@@ -97,9 +97,17 @@ def listTypes():
     print(" ")
     
 
-listTypes()
+#listTypes()
 
 #Oppgave 6
+def sequence() :
+    from random import randint
+    values = []
+    
+    for i in range(0,20) :
+        value = randint(0,99)
+        values.append(value)
+        values.sort()
+    print("The values from lowest to highest:",values)
 
-
-
+#sequence()
