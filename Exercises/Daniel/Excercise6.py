@@ -167,16 +167,18 @@ def sumWithoutMin():
     randomList.sort()
     minNum = min(randomList)
     print(randomList)
-    for element in randomList:
-        if element == randomList[0]:
-            randomList.pop(0)
+    index = 1
+    while index < len(randomList):
+        if index == randomList[0]:
+            randomList.remove(randomList[index])
         else:
-            sum = sum + element
+            sum = sum + randomList[index]
+        index += 1
     
     sum = sum - randomList[0]
     print(f"The Sum is: {sum}")
 
-# sumWithoutMin()
+sumWithoutMin()
 list1 = [(1,2), (4,3), (5,6), (1,2), (3,4)]
 def isDoubleTuple():
     list2 = []
@@ -189,12 +191,27 @@ def isDoubleTuple():
 
 # print(isDoubleTuple())
 
-def generateRaise(rate):
-    
+def generateRaise():
+    raiseBase = 2400
+    message = ""
     rate = float(input("Is your interest 0.0 0.4 or 0.6? "))
+    if type(rate) == float:
+        
     
-    if rate == 0.0:
-        pass
+        if rate == 0.0:
+            raiseBase = raiseBase * 0.0
+            message = "Your work is very bad, shame on you!"
+        elif rate == 0.4:
+            raiseBase = raiseBase * 0.4
+            message = "Your work is ok"
+        else:
+            raiseBase = raiseBase * 0.6
+            message = "Excellent job!"
+    
+    return raiseBase, message
+
+# generateRaise()
+            
         
         
     
