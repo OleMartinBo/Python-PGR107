@@ -143,4 +143,12 @@ def removeItem(myList):
                 myList.remove(item)
     
     
-listItems()
+#listItems()
+
+#Oppgave 10
+def myTuples() :
+    tuplesList = (1, 2), (5, 7), (1, 2), (4, 3), (1, 2)
+    tuplesList = tuple(set(tuplesList))
+    print(tuplesList)
+
+#myTuples()
