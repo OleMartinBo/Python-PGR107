@@ -1,4 +1,7 @@
 
+import random
+
+
 def vowelCheck():
         vowels = "aeiouAEIOU"
         userInput = input("Enter a letter: ")
@@ -98,7 +101,107 @@ def defineSeason():
     
     print(f"{userDate} {userMonth} is in: {season}")
     
-defineSeason()
+#defineSeason()
+
+def generateRaise():
+    raiseBase = 2400
+    newRaise = 0
+    message = ""
+    
+    rate = input("Is your interest 0.0 0.4 or 0.6? ")
+    if float(rate) == 0.0:
+        newRaise = raiseBase * 0.0
+        message = "Your work is very bad, shame on you!"
+    elif float(rate) == 0.4:
+        newRaise = raiseBase * 0.4
+        message = "Your work is ok"
+    elif float(rate) == 0.6:
+        newRaise = raiseBase * 0.6
+        message = "Excellent job!"
+    else:
+        message = "Your entry is unvalid"
+    
+    return print(f"{message} Your raise is: {newRaise}")
+
+# generateRaise()
+
+def determineSalary():
+    userHours = float(input("Enter your hours worked: "))
+    BASE_SALARY = 8
+    BONUS_SALARY = 12
+    userSalary = 0
+    extraSalary = 0
+    if userHours < 0:
+        print("You worked less than 0 hours?")
+    elif userHours > 40:
+        overForty = userHours - 40
+        userSalary = 320 + overForty * BONUS_SALARY
+    else: 
+        userSalary = userHours * BASE_SALARY
+    
+    return userSalary
+
+# print(f"Your salary is: {determineSalary()}$")
+
+def isSenior():
+    userInput = input("Write s for senior: ")
+    output = ""
+    
+    if userInput.lower() == "s":
+         output = "The salary for a senior developer is 800$ a week"
+    else: 
+        output = "The salary of a junior developer is 375$ a week"
+    
+    
+    return output
+
+# print(isSenior())
+def whileLoop():
+    x = 1
+    while x <= 5:
+        f = 1 + x + (x**2)/2 + (x**3)/6 + (x**4)/24
+        print(f"x = {x} --> f(x) = {f: 0.2f}")
+        x += 1
+
+# whileLoop()
+
+def forLoop():
+    x = 6
+    for i in range(1,x):
+        f = 1 + i + (i**2)/2 + (i**3)/6 + (i**4)/24
+        print(f"x = {i} --> f(x) = {f: 0.2f}")
+        
+# forLoop()
+
+def coinToss():
+    userInput = int(input("Write how many times the coin toss should happen: "))
+    heads = 0
+    tails = 0
+    for i in range(1, userInput+1):
+        number = random.randint(1,2)
+
+        if number == 1:
+            heads = heads + 1
+        elif number == 2:
+            tails = tails + 1
+        else: 
+            print("Wrong input")
+        
+    return print(f"Number of heads: {heads}\nNumber of tails: {tails}")
+    
+# coinToss()
+
+def determineVolume():
+    r = float(input("Enter radius: "))
+    PI = 3.14
+    volume = 4/3 * PI * r**3
+    
+    return volume
+
+print(f"The volume is: {determineVolume()}")
+
+
+    
     
         
     
