@@ -125,7 +125,7 @@ for i in range(1,6):
 print(space)
 
 """
-print("oppgave 6.a \n" + space)
+print("oppgave 6 \n" + space)
 
 """
 row = 5 
