@@ -58,3 +58,67 @@ def oppgave3() :
 
 #Oppgave 4
 def oppgave4() :
+    students = {'Carl':'B','Francine':'A','Joe':'C','Sarah':'A'}
+    
+    addStudent = input("Add student: ")
+    newGrade = input("Change grade to: ")
+    
+    students[addStudent] = newGrade
+    for i in sorted(students) :
+        print(i, students[i])
+        
+    removeStudent = input("Remove student: ")
+    
+    if removeStudent in students :
+        students.pop(removeStudent)
+    else: 
+        print(removeStudent, "is not in dictionary")
+        
+    for i in sorted(students) :
+        print(i, students[i])
+    
+#oppgave4()
+
+#Oppgave 5
+def oppgave5() :
+    
+    users = {'Ole':'12345'}
+    enterName = input("Enter the username: ")
+    enterPassword = input("Enter password: ")
+    
+    if accept_login(users, enterName, enterPassword) :
+        print("Login Successful")
+    else:
+        print("Login Failed")   
+
+
+def accept_login(users, enterName, enterPassword) :
+    
+    if enterName not in users :
+        return False
+    else :
+        if users[enterName] == enterPassword :
+            return True
+        else :
+            return False        
+
+#oppgave5()
+
+#Oppgvae 6
+def oppgave6():
+    #dictionary = {'a': 4, 'b': 5, 'c': 3}
+    dictionary = {'a': 2, 'b': 4, 'c': 2}
+
+    print(one_to_one(dictionary))
+    
+    
+def one_to_one(d) : 
+    
+    seen = set() 
+    for value in d.values() :
+        if value in seen :
+            return False
+        seen.add(value)
+    return True
+
+oppgave6()
