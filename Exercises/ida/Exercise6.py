@@ -196,32 +196,38 @@ else:
 #8. Write a function sum_without_smallest that computes the sum of a list of 10 random values between 1
 #and 100, except for the smallest one, in a single loop. In the loop, update the sum and the smallest value.
 #After the loop, subtract the smallest value from the sum and return the difference..
-        #usikker om riktig - Forstod ikke helt oppgaven??
+
+def main():
+    SIZE_OF_LIST = 10
+    values = []
+
+    for i in range(SIZE_OF_LIST):
+        value = randint(1, 100)
+        values.append(value)
+
+    print("List: ", values)
+
+    (total, smallest, total_without_smallest) = sum_without_smallest(values)
+
+    print("smallest value in the list: ", smallest)
+    print("Total value: ", total)
+    print("Total values wothout the smallest value: ", total_without_smallest)
+
+def sum_without_smallest(values):
+    smallest = values[0]
+    total = 0
+
+    for element in values:
+        if element < smallest:
+            smallest = element
+        total += element
+    
+    total_without_smallest = total - smallest
+
+    return(total, smallest, total_without_smallest)
 
 
-def sum_without_smallest():
-    random_lst = []
-    min_val = float('inf') # returns a floating infinity value and initialize min_val with the maximum possible value --> bra å bruke for å holde på min og max verdier,fordi alt vil bli lavere
-
-    for i in range(10):
-        num = randint(1, 100)
-        random_lst.append(num)
-        min_val = min(min_val, num)
-
-    Sum = sum(random_lst)
-    print("Original list sum:", Sum)
-
-    print("The minimum value in list: ", min_val)
-
-    newList = Sum - min_val
-
-    print("New list without smallest value: ", newList)
-
-sum_without_smallest()
-
-
-
-#9. Write a function remove_min that removes the minimum value 
+#TASK 9. Write a function remove_min that removes the minimum value 
 # from a list without using the min function or remove method.
 
 def remove_min():

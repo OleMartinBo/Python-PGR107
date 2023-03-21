@@ -194,3 +194,38 @@
 #Forelesning lists
 
 #set
+
+
+"""
+LECTURE DICTIONARY
+
+"""
+def main():
+    dictionary = {
+        "0": "Zero",
+        "1": "One",
+        "2": "Two",
+        "3": "Three",
+        "4": "Four",
+        "5": "Five",
+        "6": "Six",
+        "7": "Seven",
+        "8": "Eight",
+        "9": "Nine"
+    }
+    
+    phone_number = input("Enter ypur phone number: ")
+
+    result = translate (dictionary, phone_number)
+
+    print("Ypur phone number is: ", result )
+
+def translate(dictionary, phone_number):
+    result = ""
+    for char in phone_number:
+        result += dictionary.get(char, "???") + " "
+
+    return result
+
+
+main()

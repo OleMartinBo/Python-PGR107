@@ -176,7 +176,7 @@ def task8():
         salary = 320 + (userInput - 40) * 12
         print(f"Your salary are {salary} dollars")
 
-#task8()
+task8()
 
 SENIOR = 800
 JUNIOR = 375
