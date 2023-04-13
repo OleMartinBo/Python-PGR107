@@ -1,0 +1,5 @@
+/* 1 */ Dette
+/* 2 */ Funket
+/* 3 */ Som 
+/* 4 */ Det 
+/* 5 */ Skulle
