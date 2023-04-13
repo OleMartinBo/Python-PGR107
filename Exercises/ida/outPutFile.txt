@@ -1,0 +1,4 @@
+line 1: Dette 
+ line 2: er
+ line 3: en
+ line 4: test 
