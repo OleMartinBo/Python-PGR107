@@ -87,4 +87,3 @@ def task5():
     print("Sum is: ", total)
 
 #task5()
-
