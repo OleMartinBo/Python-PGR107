@@ -4,14 +4,13 @@ class Robot:
         self.color = color
         self.weigt = weight
     
-    def introduce_self(self):
-        print(f"My name is {self.name}, and my facorite color is {self.color}. I weight {self.weigt} kg")
+    def __str__(self):
+      return f"my name is {self.name}, and my favorite color is {self.color}, and i weight {self.weigt} kg"
 
     
 
 r1 = Robot("Tom", "Red", 50)
 r2 = Robot("Ida", "Rosa", 40)
 
-r1.introduce_self()
-r2.introduce_self()
-
+print(r1)
+print(r2)
